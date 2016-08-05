@@ -47,7 +47,7 @@ Working :
       - Calculating the activation values of the final layer by multiplying the activation values of the hidden layer and weight matrix associated with the hidden layer.
 
 9. a3_error = target_output - a3
-   a2_error = np.dot(a3_error, weights_2[0:2, :].T)*sigmoid(np.dot(layer1,      	      weights_1))
+   a2_error = np.dot(a3_error, weights_2[0:2, :].T)*sigmoid(np.dot(layer1, weights_1))
       - Calculating the error of the final layer and using that error, we calculate the error of the hidden layer.
 
 10. a3_delta = a3_error*sigmoid_gradient(a3)
